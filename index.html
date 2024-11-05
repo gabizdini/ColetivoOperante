@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/styles/styleindex.css">
+    <link rel="stylesheet" type="text/css" href="/styles/stylenav.css">
+    <link rel="stylesheet" type="text/css" href="/styles/stylefooter.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <meta charset="UTF-8">
+    <title> Associação Coletivo Operante </title>
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Inicializa o Swiper depois que o conteúdo está carregado
+            var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+            loadNavbar();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="nav-item"> 
+                    <a href="index.html"> Início </a>
+                </li>
+                <li class="nav-item"><a href="sobreNos.html">  Sobre Nós </a></li>
+                <li class="nav-item" onclick="toggleSubmenu(this)"> 
+                    Coletivos <span class="arrow">&#9660;</span>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="sarara.html">Sarará</a></li>
+                        <li class="submenu-item"><a href="rua.html">Rua</a></li>
+                        <li class="submenu-item"><a href="lucaca.html">Lucaca</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="contato.html"> Contatos</a> </li>
+                <div class="img-logoCO">
+                    <img src="images/logos/logoCO.jpeg" alt="Logo Associação Coletivo Operante">
+                </div>
+            </ul>
+            
+        </nav>
+    </header> 
+    <section class="sec-introducao">
+        <div class="container">
+            <div class="introducao">
+                <h1>Associação <br> Coletivo Operante</h1>
+                <p>Bem-vindo ao Coletivo Operante, uma organização do Terceiro Setor dedicada a unir coletivos e associações diversas. Atuamos como uma associação guarda-chuva, fortalecendo iniciativas sociais e promovendo a colaboração entre diferentes grupos. Junte-se a nós na construção de um futuro mais inclusivo e solidário!</p>
+                <a href="sobreNos.html" class="btn-amarelo">Saber Mais</a>
+            </div>
+            <div>
+                <img src="/images/teste/imagemdescricao.png" alt="Imagem Descrição" class="imagem-introducao">
+            </div>
+        </div>
+    </section>
+    
+    <div class="imagem-waving"></div>
+    
+    <section>
+        <div class="eventos">
+            <h2>Eventos</h2>
+            <div class="evento">
+                <div class="texto-evento">
+                    <h3>Campeonatos de Voleibol</h3>
+                    <h4>19 de novembro 2023, 10 e 17 de março de 2024</h4>
+                    <p>Realizamos dois torneios de voleibol – um municipal e um regional – utilizando a quadra do Bairro Jardim das Oliveiras como palco das competições. Os campeonatos foram bem disputados, contando com a organização, premiação e responsabilidade do Coletivo Operante e do Mandato Coletivo de Machado, com a devida autorização da Secretaria Municipal de Esporte.</p>
+                </div>
+                <!-- Carrossel de Imagens -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/images/eventos/voleibol/4.png" alt="Projeto 1 - Imagem 1"></div>
+                        <div class="swiper-slide"><img src="/images/eventos/voleibol/5.png" alt="Projeto 1 - Imagem 1"></div>
+                        <div class="swiper-slide"><img src="/images/eventos/voleibol/1.png" alt="Projeto 1 - Imagem 1"></div>
+                        <div class="swiper-slide"><img src="/images/eventos/voleibol/2.png" alt="Projeto 1 - Imagem 2"></div>
+                        <div class="swiper-slide"><img src="/images/eventos/voleibol/3.png" alt="Projeto 1 - Imagem 3"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="evento">
+                <div class="texto-evento">
+                    <h3>Cinemulher</h3>
+                    <h4>08 de Março de 2024</h4>
+                    <p>Inauguramos a Arena Zuza como um espaço dedicado ao cinema, com toda a estrutura montada para projeção e exibição de filmes em comemoração ao Dia da Mulher. Esse evento foi uma extensão da Sala de Cinema do Machado Shopping, conhecida por oferecer sessões gratuitas de cinema para crianças, jovens, idosos, pessoas em recuperação e membros de escolas, associações e agremiações locais.</p>
+                </div>
+                <div class="img-container-cinemulher">
+                    <img src="/images/eventos/cinemulher/6.png" alt="Cinemulher">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="rodape">
+        <div class="container-rodape">
+            <div class="texto">
+                <p>&copy; 2024 Associação Coletivo Operante. Todos os direitos reservados.</p>
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="/images/logos/logoinstagram.png" alt="Instagram" />
+                    </a>
+                    <a href="tel:+5511999999999">
+                        <img src="/images/logos/telefone.png" alt="Telefone" />
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="/images/logos/facebook.png" alt="Facebook" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Contêiner separado para as logos com fundo cinza -->
+        <div class="container-logos">
+            <div class="logos">
+                <div class="logo-if">
+                    <a href="https://portal.mch.ifsuldeminas.edu.br" target="_blank">
+                        <img src="/images/logos/IFSULDEMINAS.png" alt="If Sul de Minas - Campus Machado">
+                    </a>
+                </div>
+                <div class="logo-ACO">
+                    <img src="/images/logos/logoCO.jpeg" alt="Logo ACO">
+                </div>
+            </div>
+        </div>
+    </footer>    
+    
+
+    
+</body>
+</html>

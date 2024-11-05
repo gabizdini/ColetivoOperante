@@ -1,0 +1,181 @@
+html { scroll-behavior: smooth; }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+.sec-introducao{
+    background-color: #e5daf9;
+    padding-top: 40px;
+}
+.container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row; /* Garante que o texto e a imagem fiquem lado a lado */
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo do conteúdo de texto */
+.introducao {
+    max-width: 600px;
+}
+
+.introducao h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.introducao p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-amarelo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fbef1a;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn-amarelo:hover{
+    background-color: #eecd12; /* Cor do botão ao passar o mouse */
+    transform: scale(1.05);
+}
+/* Estilo da imagem à direita */
+.imagem-introducao {
+    width: 400px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-waving {
+    width: 100%; /* Faz a imagem ocupar toda a largura da tela */
+    height: 120px; /* Altura da imagem conforme especificado na URL */
+    background-image: url('https://capsule-render.vercel.app/api?type=waving&color=812df7&height=120&section=header');
+    background-size: cover; /* Faz a imagem cobrir todo o contêiner */
+    background-repeat: no-repeat; /* Remove a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    background-color: #f4f4f9; /* Cor de fundo correspondente */
+    position: relative; /* Para usar posicionamento absoluto */
+}
+
+.imagem-waving::before {
+    content: ""; /* Cria um pseudo-elemento */
+    position: absolute; /* Posiciona-o em relação ao contêiner */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    bottom: 0; /* Alinha à parte inferior */
+    background-color: rgba(244, 244, 249, 0.8); /* Cor de fundo com opacidade */
+    z-index: 1; /* Coloca a camada acima da imagem */
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Alinha o texto e a imagem em coluna em telas menores */
+        text-align: center;
+    }
+    
+    .imagem-introducao {
+        margin: 20px 0; /* Margem entre imagem e texto em telas menores */
+    }
+}
+
+/*---------------------------------------------------------*/
+.eventos {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.eventos h2 {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.evento {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.texto-evento{
+    align-items: flex-start;
+}
+
+.texto-evento h3 {
+    padding-top: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+.texto-evento h4{
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Parágrafo do evento */
+.texto-evento p {
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+.img-container-cinemulher {
+    margin: 0 auto; /* Centraliza o contêiner da imagem */
+    width: 200px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+    display: flex; /* Adiciona Flexbox para o contêiner */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.img-container-cinemulher img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+    border-radius: 5px; /* Bordas arredondadas para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+.swiper {
+    width: 200px; /* Ajuste a largura conforme necessário */
+    height: auto;
+}
+
+.swiper-slide img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do card */
+    border-radius: 5px; /* Bordas arredondadas para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}

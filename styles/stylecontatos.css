@@ -1,0 +1,14 @@
+html { scroll-behavior: smooth; }
+
+.container-contato{
+    margin: 40px;
+}
+
+.contato {
+    max-width: 60%; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    padding: 20px; /* Espaçamento interno do contêiner */
+    background-color: white; /* Cor de fundo branca */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}

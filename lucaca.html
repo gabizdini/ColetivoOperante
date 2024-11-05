@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/styles/stylefooter.css">
+    <link rel="stylesheet" type="text/css" href="/styles/stylenav.css">
+    <link rel="stylesheet" type="text/css" href="/styles/stylelucaca.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Coletivo Lucaca</title>
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Inicializa o Swiper depois que o conteúdo está carregado
+            var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+            loadNavbar();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="nav-item"> 
+                    <a href="index.html"> Início </a>
+                </li>
+                <li class="nav-item"><a href="sobreNos.html">  Sobre Nós </a></li>
+                <li class="nav-item" onclick="toggleSubmenu(this)"> 
+                    Coletivos <span class="arrow">&#9660;</span>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="sarara.html">Sarará</a></li>
+                        <li class="submenu-item"><a href="rua.html">Rua</a></li>
+                        <li class="submenu-item"><a href="lucaca.html">Lucaca</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="contato.html"> Contatos</a> </li>
+                <div class="img-logoCO">
+                    <img src="images/logos/logoCO.jpeg" alt="Logo Associação Coletivo Operante">
+                </div>
+            </ul>
+            
+        </nav>
+    </header> 
+    
+    <section class="sec-historia">
+        <div class="container-historia">
+            <div class="historia">
+                <h1> Coletivo Lucaca </h1>
+                <h2> História </h2>
+                <img class="img-lucaca" src="logolucaca.png" alt="Logo Lucaca">
+                <p>O Coletivo LUCACA é uma organização social horizontal que reúne cidadãos e cidadãs LGBTQIAPN+, dedicada à promoção de direitos e à igualdade social. O nome "Coletivo Luiz Carlos da Carola" é uma homenagem ao legado de Luiz Carlos, um importante representante da luta pelos direitos LGBTQIAPN+ em Machado durante as décadas de 70 e 80.</p>
+                <p>Luiz Carlos foi um verdadeiro ícone em sua comunidade, reconhecido não apenas por sua arte como carnavalesco e artista plástico, mas também por seu talento como decorador de eventos e cozinheiro. Ele se destacou por sua capacidade de estar presente em todos os espaços da sociedade, rompendo barreiras e promovendo a inclusão.</p>
+                <p>Através do Coletivo LUCACA, buscamos dar continuidade ao seu trabalho, reafirmando que a condição sexual, a orientação sexual e a identidade de gênero não devem ser obstáculos para a plena participação na vida social. Queremos criar um ambiente acolhedor e respeitoso, onde todos possam ser e estar livremente, celebrando a diversidade e promovendo a igualdade de direitos para todas as pessoas, independentemente de sua identidade. Juntos, honramos o legado de Luiz Carlos, lutando por um futuro mais justo e inclusivo para todos.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="imagem-waving"></div>
+
+    <section class="projetos">
+        <h2>Projetos</h2>
+        <div class="card-container">
+            <div class="card">
+                <!-- Carrossel do Projeto 1 -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/images/teste/sobrenos.png" alt="Projeto 1 - Imagem 1"></div>
+                        <div class="swiper-slide"><img src="/images/teste/sobrenos.png" alt="Projeto 1 - Imagem 2"></div>
+                        <div class="swiper-slide"><img src="/images/teste/sobrenos.png" alt="Projeto 1 - Imagem 3"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <h3>Projeto 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="card">
+                <!-- Carrossel do Projeto 2 -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="projeto2a.png" alt="Projeto 2 - Imagem 1"></div>
+                        <div class="swiper-slide"><img src="projeto2b.png" alt="Projeto 2 - Imagem 2"></div>
+                        <div class="swiper-slide"><img src="projeto2c.png" alt="Projeto 2 - Imagem 3"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <h3>Projeto 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <!-- Repita para outros projetos -->
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="container-rodape">
+            <div class="texto">
+                <p>&copy; 2024 Associação Coletivo Operante. Todos os direitos reservados.</p>
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="/images/logos/logoinstagram.png" alt="Instagram" />
+                    </a>
+                    <a href="tel:+5511999999999">
+                        <img src="/images/logos/telefone.png" alt="Telefone" />
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="/images/logos/facebook.png" alt="Facebook" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Contêiner separado para as logos com fundo cinza -->
+        <div class="container-logos">
+            <div class="logos">
+                <div class="logo-if">
+                    <a href="https://portal.mch.ifsuldeminas.edu.br" target="_blank">
+                        <img src="/images/logos/IFSULDEMINAS.png" alt="If Sul de Minas - Campus Machado">
+                    </a>
+                </div>
+                <div class="logo-ACO">
+                    <img src="/images/logos/logoCO.jpeg" alt="Logo ACO">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

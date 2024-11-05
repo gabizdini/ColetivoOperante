@@ -1,0 +1,204 @@
+html { scroll-behavior: smooth; }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.sec-historia {
+    background-color: #e5daf9; /* Cor de fundo da seção */
+    padding: 40px 20px; /* Espaçamento interno */
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.sec-sobre {
+    background-color: #e5daf9; /* Cor de fundo da seção */
+    padding: 40px 20px; /* Espaçamento interno */
+}
+
+.container-historia {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.historia {
+    max-width: 600px;
+}
+
+.historia {
+    flex: 1; /* Permite que a história ocupe o espaço restante */
+    margin-right: 20px; /* Espaço à direita da história */
+}
+
+.historia h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.historia p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Estilo da imagem à direita */
+.img-sarara {
+    width: 400px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-waving {
+    width: 100%; /* Faz a imagem ocupar toda a largura da tela */
+    height: 120px; /* Altura da imagem conforme especificado na URL */
+    background-image: url('https://capsule-render.vercel.app/api?type=waving&color=812df7&height=120&section=header');
+    background-size: cover; /* Faz a imagem cobrir todo o contêiner */
+    background-repeat: no-repeat; /* Remove a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    background-color: #f4f4f9; /* Cor de fundo correspondente */
+    position: relative; /* Para usar posicionamento absoluto */
+}
+
+.imagem-waving::before {
+    content: ""; /* Cria um pseudo-elemento */
+    position: absolute; /* Posiciona-o em relação ao contêiner */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    bottom: 0; /* Alinha à parte inferior */
+    background-color: rgba(244, 244, 249, 0.8); /* Cor de fundo com opacidade */
+    z-index: 1; /* Coloca a camada acima da imagem */
+}
+/*----------------------------------------------------------------*/
+
+.projetos {
+    max-width: 80%; /* Define uma largura máxima */
+    margin: 40px auto; /* Diminui a margem superior para 40px */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo branca */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.projetos h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-container {
+    display: flex; /* Habilita o layout flexível */
+    justify-content: space-between; /* Espaço entre os cards */
+    margin-top: 20px; /* Espaço acima dos cards */
+    flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte em telas menores */
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 0 0 22%; /* Cada card ocupa aproximadamente 22% do espaço disponível */
+    margin: 0 10px; /* Espaçamento lateral entre os cards */
+    padding: 20px; /* Espaçamento interno do card */
+    background-color: #f0f0f0; /* Cor de fundo do card */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card h3 {
+    font-size: 20px; /* Tamanho da fonte do título do card */
+    color: #333; /* Cor do título do card */
+    margin-bottom: 10px; /* Espaçamento abaixo do título do card */
+}
+
+.card p {
+    font-size: 14px; /* Tamanho da fonte do texto do card */
+    color: #555; /* Cor do texto do card */
+}
+
+.card-container {
+    display: flex; /* Habilita o layout flexível */
+    justify-content: center; /* Centraliza os cards dentro do contêiner */
+    margin-top: 20px; /* Espaço acima dos cards */
+    flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte em telas menores */
+}
+
+.card {
+    flex: 0 0 30%; /* Cada card ocupa 30% do espaço disponível */
+    margin: 10px; /* Espaçamento lateral entre os cards */
+    padding: 20px; /* Espaçamento interno do card */
+    background-color: #f0f0f0; /* Cor de fundo do card */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centraliza o conteúdo dentro do card */
+}
+
+.card img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do card */
+    border-radius: 5px; /* Bordas arredondadas para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.card h3 {
+    font-size: 20px; /* Tamanho da fonte do título do card */
+    color: #333; /* Cor do título do card */
+    margin: 10px 0; /* Espaçamento acima e abaixo do título */
+}
+
+.card p {
+    font-size: 14px; /* Tamanho da fonte do texto do card */
+    color: #555; /* Cor do texto do card */
+}
+/* CARROSSEL*/
+.projetos {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.swiper {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

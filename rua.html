@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/styles/stylefooter.css">
+    <link rel="stylesheet" type="text/css" href="/styles/stylenav.css">
+    <title>Coletivo Rua</title>
+    <script src="script.js" defer></script>
+    <script>
+        window.onload = function() {
+            loadNavbar();
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="nav-item"> 
+                    <a href="index.html"> Início </a>
+                </li>
+                <li class="nav-item"><a href="sobreNos.html">  Sobre Nós </a></li>
+                <li class="nav-item" onclick="toggleSubmenu(this)"> 
+                    Coletivos <span class="arrow">&#9660;</span>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="sarara.html">Sarará</a></li>
+                        <li class="submenu-item"><a href="rua.html">Rua</a></li>
+                        <li class="submenu-item"><a href="lucaca.html">Lucaca</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="contato.html"> Contatos</a> </li>
+                <div class="img-logoCO">
+                    <img src="images/logos/logoCO.jpeg" alt="Logo Associação Coletivo Operante">
+                </div>
+            </ul>
+            
+        </nav>
+    </header>
+    <footer class="rodape">
+        <div class="container-rodape">
+            <div class="texto">
+                <p>&copy; 2024 Associação Coletivo Operante. Todos os direitos reservados.</p>
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="/images/logos/logoinstagram.png" alt="Instagram" />
+                    </a>
+                    <a href="tel:+5511999999999">
+                        <img src="/images/logos/telefone.png" alt="Telefone" />
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="/images/logos/facebook.png" alt="Facebook" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Contêiner separado para as logos com fundo cinza -->
+        <div class="container-logos">
+            <div class="logos">
+                <div class="logo-if">
+                    <a href="https://portal.mch.ifsuldeminas.edu.br" target="_blank">
+                        <img src="/images/logos/IFSULDEMINAS.png" alt="If Sul de Minas - Campus Machado">
+                    </a>
+                </div>
+                <div class="logo-ACO">
+                    <img src="/images/logos/logoCO.jpeg" alt="Logo ACO">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
