@@ -35,6 +35,10 @@ body {
     color: whitesmoke; 
     text-decoration: none; 
 }
+.nav-item a:hover {
+    color: whitesmoke; 
+    text-decoration: none; 
+}
 
 /* Estilo ao passar o mouse sobre o botão */
 .nav-item:hover {
