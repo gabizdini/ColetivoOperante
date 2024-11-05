@@ -5,6 +5,9 @@
     <link rel="stylesheet" type="text/css" href="/styles/stylenav.css">
     <link rel="stylesheet" type="text/css" href="/styles/stylefooter.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <title> Associação Coletivo Operante </title>
     <script src="script.js" defer></script>
@@ -101,6 +104,25 @@
             </div>
         </div>
     </section>
+    <section class="project-actions mt-5" id="actions-table">
+        <h2>Eventos da Associação</h2>
+        <div id="div_table">
+            <table class="table">
+                <thead class="custom-blue-header">
+                    <tr>
+                        <th>Evento</th>
+                        <th>Data</th>
+                        <th>Local</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados CSV serão inseridos aqui via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        
+    </section>
     
 
     <footer class="rodape">
@@ -120,6 +142,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- Contêiner separado para as logos com fundo cinza -->
         <div class="container-logos">
             <div class="logos">
