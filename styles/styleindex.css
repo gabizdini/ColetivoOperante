@@ -64,6 +64,8 @@ body {
 .btn-amarelo:hover{
     background-color: #eecd12; /* Cor do botão ao passar o mouse */
     transform: scale(1.05);
+    color: #333;
+    text-decoration: none;
 }
 /* Estilo da imagem à direita */
 .imagem-introducao {
