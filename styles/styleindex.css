@@ -112,7 +112,7 @@ body {
 .eventos {
     max-width: 90%;
     margin: auto;
-    padding: 20px;
+    padding : 20px;
 }
 
 .eventos h2 {
@@ -183,7 +183,6 @@ body {
 }
 .project-actions h2 {
     text-align: center;
-    margin-top: 10px;
     display: block;
 }
 

@@ -33,14 +33,13 @@
     transition: transform 0.3s;
 }
 
-.logo-if img:hover,
-.logo-ACO img:hover {
+.logo-if img:hover {
     transform: scale(1.1);
 }
 
 /* Texto de direitos autorais */
 .texto p {
-    color: #555;
+    color: #333;
     margin: 10px 0;
 }
 

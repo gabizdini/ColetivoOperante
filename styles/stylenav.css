@@ -81,7 +81,10 @@ body {
     color: #333; 
     text-decoration: none; 
 }
-
+.submenu-item a:hover {
+    color: #333; 
+    text-decoration: none; 
+}
 .submenu-item:hover {
     background: #e4e4e4;
 }
