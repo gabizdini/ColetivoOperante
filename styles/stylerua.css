@@ -1,0 +1,8 @@
+.manutencao{
+    justify-content: center;
+    display: flex;
+}
+
+.manutencao img{
+    width: 300px;
+}

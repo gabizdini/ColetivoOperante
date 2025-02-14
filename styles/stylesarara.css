@@ -202,3 +202,11 @@ body {
     height: 100%;
     object-fit: cover;
 }
+.manutencao{
+    justify-content: center;
+    display: flex;
+}
+
+.manutencao img{
+    width: 300px;
+}
